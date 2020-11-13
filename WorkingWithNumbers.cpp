@@ -75,6 +75,7 @@ void Chislo::changeSystem(int new_numeralSystem = DEFAULT_SYSTEM) {
 			int delitel = new_number / new_numeralSystem;
 			perevernutoe_chislo += new_number - delitel * new_numeralSystem;
 		}
+		perevernutoe_chislo.pop_back();
 		string normal_chislo;
 		for (int j = perevernutoe_chislo.length; j > 0 ; j--) {
 			char symbol = perevernutoe_chislo[j];
