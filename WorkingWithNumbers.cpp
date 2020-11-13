@@ -55,6 +55,7 @@ int power_int(int a, int n) {
 		power_int(a, n / 2)* power_int(a, n / 2);
 	else
 		a * power_int(a, n / 2);
+	return a;
 }
 
 void Chislo::changeSystem(int new_numeralSystem = DEFAULT_SYSTEM) {
