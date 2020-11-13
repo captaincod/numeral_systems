@@ -74,6 +74,7 @@ void Chislo::changeSystem(int new_numeralSystem = DEFAULT_SYSTEM) {
 		while (new_number > 0) {
 			int delitel = new_number / new_numeralSystem;
 			perevernutoe_chislo += new_number - delitel * new_numeralSystem;
+			new_number /= new_numeralSystem;
 		}
 		perevernutoe_chislo.pop_back();
 		string normal_chislo;
